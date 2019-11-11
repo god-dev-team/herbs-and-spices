@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'god-herbs-and-spices'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('god-herbs-and-spices');
+    expect(app.title).toEqual('Herbs and Spices');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to god-herbs-and-spices!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Herbs and Spices!');
   });
 });

@@ -1,12 +1,10 @@
+<!-- Fixed navbar -->
 <header>
-    <!-- Fixed navbar -->
     <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
         <div class="container">
             <a class="navbar-brand"
-               href="#"><img width="25"
-                             style="margin-top: 5px; margin-bottom: 5px"
-                             alt="Angular Logo"
-                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+               href="#">
+                <fa-icon [icon]="herbsAndSpicesLogo"></fa-icon>
                 Herbs and Spices</a>
             <div class="collapse navbar-collapse"
                  id="navbarCollapse">
@@ -21,17 +19,20 @@
         </div>
     </nav>
 </header>
-
-<!-- Begin page content -->
-<main role="main"
-      class="container pt-4">
-    <h1 class="mt-5">Welcome to {{title}}!</h1>
-    <p class="lead">This application consists of a bunch herbs and spices. You can take a more detailed look at them later.</p>
-    <p>For now let's take a look at what we've got:</p>
-    <ul>
-        <li *ngFor="let herbOrSpice of herbsAndSpices">
-            <h2>{{herbOrSpice.name}}</h2>
-        </li>
-    </ul>
-    <router-outlet></router-outlet>
+<!-- ---------------- -->
+<main class="mt-4">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-white">
+            <h1 class="mt-5">Welcome to {{title}}!</h1>
+            <p class="lead">This application consists of a bunch herbs and spices. You can take a more detailed look at them later.</p>
+        </div>
+    </div>
+    <div class="container">
+        <p>For now let's take a look at what we've got:</p>
+        <ul>
+            <li *ngFor="let herbOrSpice of herbsAndSpices">
+                <h2>{{herbOrSpice.name}}</h2>
+            </li>
+        </ul>
+    </div>
 </main>

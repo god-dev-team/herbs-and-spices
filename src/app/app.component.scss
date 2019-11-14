@@ -1,0 +1,13 @@
+$img-overlay: rgba(0, 0, 0, 0.15);
+
+.jumbotron {
+    padding:             60px 15px 0;
+    background-size:     cover;
+    background-position: center;
+    background-repeat:   no-repeat;
+    background-image:    linear-gradient($img-overlay, $img-overlay), url("/assets/img/rob-pumphrey-_f26vO7Cg_g-unsplash.jpg");
+
+    > .container {
+        height: 300px;
+    }
+}

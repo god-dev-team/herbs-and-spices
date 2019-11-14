@@ -1,13 +1,14 @@
+$blue:   #0074D9;
+$purple: #B10DC9;
+$pink:   #F012BE;
+$red:    #FF4136;
+$orange: #FF851B;
+$yellow: #FFDC00;
+$green:  #2ECC40;
+$teal:   #39CCCC;
+$cyan:   #7FDBFF;
+$black:  #111111;
+
+$dark:   $black;
+
 @import "~bootstrap/scss/bootstrap";
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body > .container {
-    padding: 60px 15px 0;
-}
-
-code {
-    font-size: 80%;
-}
